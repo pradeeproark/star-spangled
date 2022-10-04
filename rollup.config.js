@@ -8,6 +8,10 @@ const packageJson = require("./package.json");
 export default [
   {
     input: "src/index.ts",
+    watch: {
+      include: "./src/**",
+      clearScreen: false,
+    },
     output: [
       {
         file: packageJson.main,
