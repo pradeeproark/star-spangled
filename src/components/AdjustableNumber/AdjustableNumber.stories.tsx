@@ -14,11 +14,13 @@ export default {
     }
 };
 
-const Template : Story < AdjustableNumberProps > = (args : JSX.IntrinsicAttributes & AdjustableNumberProps) => <p>when you eat&nbsp;
+const Template : Story < AdjustableNumberProps > = (args : JSX.IntrinsicAttributes & AdjustableNumberProps) => <p>when you eat
     <AdjustableNumber {...args}/>
-    cookies, you consume&nbsp;
-    <AdjustableNumber displayNumber={1}/>&nbsp; calories. That's&nbsp;
-    <AdjustableNumber displayNumber={2}/>&nbsp; of your recommended daily calories</p>
+    cookies, you consume
+    <AdjustableNumber displayNumber={1}/>
+    calories. That's
+    <AdjustableNumber displayNumber={2}/>
+    of your recommended daily calories</p>
 
 export const DefaultAdjustableNumber = Template.bind({});
 
