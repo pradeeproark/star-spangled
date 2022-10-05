@@ -1,6 +1,6 @@
 import {Story} from '@storybook/react';
 import React from 'react';
-import AdjustableNumber, {AdjustableNumberProps} from './AdjustableNumber';
+import AdjustableNumber, {AdjustableNumberProps, DISPLAYMODE} from './AdjustableNumber';
 
 export default {
     title : 'AdjustableNumber',
@@ -10,6 +10,13 @@ export default {
             control: {
                 type: 'number'
             }
+        },
+        displayMode: {
+            control: 'radio',
+            options: [
+                DISPLAYMODE.DISPLAY, DISPLAYMODE.EDIT
+            ],
+            defaultValue: DISPLAYMODE.DISPLAY
         }
     }
 };
@@ -23,7 +30,3 @@ const Template : Story < AdjustableNumberProps > = (args : JSX.IntrinsicAttribut
     of your recommended daily calories</p>
 
 export const DefaultAdjustableNumber = Template.bind({});
-
-DefaultAdjustableNumber.args = {
-    displayNumber: 0
-}
