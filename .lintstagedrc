@@ -3,5 +3,8 @@
     "npm test",
     "npx eslint",
     "npx prettier --write"
+  ],
+  "*.json": [
+    "npm test"
   ]
 }
