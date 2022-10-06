@@ -16,8 +16,16 @@ const AdjustableNumber = (props: AdjustableNumberProps) => {
   useEffect(() => {
     setDisplayMode(props.displayMode);
   }, [props.displayMode]);
+
+  const toggleDisplayMode = () =>
+    setDisplayMode(
+      displayMode === DISPLAYMODE.DISPLAY
+        ? DISPLAYMODE.EDIT
+        : DISPLAYMODE.DISPLAY
+    );
+
   return (
-    <div className={Styles.AdjustableContainer}>
+    <span tabIndex={0} onBlur={() => setDisplayMode(DISPLAYMODE.DISPLAY)}>
       {displayMode === DISPLAYMODE.EDIT && (
         <button onClick={() => setDisplayNumber(displayNumber - 1)}>
           &larr;
@@ -25,13 +33,7 @@ const AdjustableNumber = (props: AdjustableNumberProps) => {
       )}
       <span
         className={Styles.AdjustableNumber}
-        onDoubleClick={() =>
-          setDisplayMode(
-            displayMode === DISPLAYMODE.DISPLAY
-              ? DISPLAYMODE.EDIT
-              : DISPLAYMODE.DISPLAY
-          )
-        }
+        onDoubleClick={toggleDisplayMode}
       >
         {displayNumber}
       </span>
@@ -40,7 +42,7 @@ const AdjustableNumber = (props: AdjustableNumberProps) => {
           &rarr;
         </button>
       )}
-    </div>
+    </span>
   );
 };
 
