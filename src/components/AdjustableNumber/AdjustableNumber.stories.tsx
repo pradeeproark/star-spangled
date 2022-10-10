@@ -17,16 +17,13 @@ export default {
                 DISPLAYMODE.DISPLAY, DISPLAYMODE.EDIT
             ],
             defaultValue: DISPLAYMODE.DISPLAY
+        },
+        varName: {
+            control: 'text'
         }
     }
 };
 
-const Template : Story < AdjustableNumberProps > = (args : JSX.IntrinsicAttributes & AdjustableNumberProps) => <p>when you eat
-    <AdjustableNumber {...args}/>
-    cookies, you consume
-    <AdjustableNumber displayNumber={1}/>
-    calories. That's
-    <AdjustableNumber displayNumber={2}/>
-    of your recommended daily calories</p>
+const Template : Story < AdjustableNumberProps > = (args : JSX.IntrinsicAttributes & AdjustableNumberProps) => <AdjustableNumber {...args}/>
 
 export const DefaultAdjustableNumber = Template.bind({});

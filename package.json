@@ -66,5 +66,8 @@
     "tslib": "^2.4.0",
     "typescript": "^4.8.4",
     "webpack": "^5.74.0"
+  },
+  "dependencies": {
+    "react-custom-events": "^1.1.1"
   }
 }
