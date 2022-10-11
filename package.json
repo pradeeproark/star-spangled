@@ -68,6 +68,7 @@
     "webpack": "^5.74.0"
   },
   "dependencies": {
+    "mathjs": "^11.3.0",
     "react-custom-events": "^1.1.1"
   }
 }
