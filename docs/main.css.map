@@ -1,0 +1,1 @@
+{"version":3,"file":"main.css","mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA","sources":["webpack://star-spangled/./node_modules/@vanilla-extract/webpack-plugin/extracted.js"],"sourcesContent":["._1q3iwxv0 {\n  text-decoration-style: dotted;\n  text-decoration-line: underline;\n  user-select: none;\n}\n._1q3iwxv1 {\n  display: inline-block;\n}"],"names":[],"sourceRoot":""}
