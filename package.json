@@ -1,5 +1,5 @@
 {
-  "name": "spangled",
+  "name": "star-spangled",
   "version": "0.0.1",
   "description": "A component library to add interactive components to documents inspired by Brett Victor's tangled",
   "main": "dist/cjs/index.js",
