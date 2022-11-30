@@ -24,6 +24,12 @@ export default [
         format: "esm",
         sourcemap: true,
       },
+      {
+        file: packageJson.umd,
+        format: "umd",
+        sourcemap: true,
+        name: packageJson.name,
+      },
     ],
     plugins: [
       resolve(),
