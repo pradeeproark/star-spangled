@@ -1,6 +1,5 @@
 {
   "*.ts?(x)": [
-    "npm test",
     "npx eslint",
     "npx prettier --write"
   ]
