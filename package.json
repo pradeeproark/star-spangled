@@ -8,6 +8,9 @@
   "files": [
     "dist"
   ],
+  "exports": {
+    ".": "./dist/cjs/index.js"
+  },
   "types": "dist/index.d.ts",
   "scripts": {
     "rollup": "rollup -c",
