@@ -35,7 +35,10 @@ export default [
       resolve(),
       vanillaExtractPlugin(),
       commonjs(),
-      typescript({ tsconfig: "./tsconfig.json" }),
+      typescript({
+        tsconfig: "./tsconfig.json",
+        exclude: ["**/*.stories.tsx", "**/*.test.ts?(x)"],
+      }),
     ],
     external: ["react", "react-dom"],
   },
